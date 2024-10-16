@@ -1,0 +1,200 @@
+/* Estilos */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #1A1A1A;
+    color: #FFD700;
+    padding: 30px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Mifuente';
+    margin: 0;
+    font-size: 5rem;
+}
+
+nav ul.menu {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul.menu li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #FFD700;
+    border-radius: 25px;
+    color: #FFD700;
+    font-weight: bold;
+    background-color: #1A1A1A;
+    transition: background-color 0.3s ease;
+}
+
+nav ul.menu li a:hover {
+    background-color: #FFD700;
+    color: #1A1A1A;
+}
+
+.flex {
+    display: flex;
+}
+
+.imagen {
+    max-width: 100%;
+    width: 80%;
+    padding-right: 20px;
+}
+
+.descripcion span {
+    color: #D32F2F
+}
+
+.descripcion h3 {
+    color: #FFD700
+}
+
+section.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.producto {
+    background-color: #1A1A1A;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.863);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.863);
+}
+
+.producto h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #FFD700;
+}
+
+.producto p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #C0C0C0;
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #FFD700;
+    color: #1A1A1A;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+@font-face {
+    font-family: 'MiFuente';
+    src: url('Fonts/star_vintage/Star.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 4rem;
+    }
+
+    .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagen {
+        width: 200px;
+        padding-right: 0;
+        margin-bottom: 0%;
+    }
+
+    .descripcion {
+        width: 100%;
+        text-align: center;
+    }
+
+    section.productos {
+        padding: 20px;
+    }
+
+    .producto img {
+        width: 100%;
+        height: auto;
+    }
+
+    nav ul.menu {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    nav ul.menu li a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    header h1 {
+        font-size: 4.5rem;
+    }
+
+    nav ul.menu {
+        gap: 15px;
+    }
+
+    nav ul.menu li a {
+        padding: 8px 16px;
+    }
+
+    .imagen {
+        width: 50%;
+    }
+
+    .descripcion {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .imagen {
+        width: 40%;
+    }
+
+    .descripcion {
+        width: 60%;
+    }
+}
