@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <style>
+
+        @font-face {
+            font-family: 'Londrina Sketch';
+            src: url('Fonts\Londrina\LondrinaSketch-Regular.ttf') format('TrueType');
+        }
+
+        @font-face {
+            font-family: 'Nimbus';
+            src: url('Fonts\Nimbus\nimbussansdot-ultrligh.otf') format('opentype');
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("Imagenes\Wallpaper.jpg");
+            background-size: cover; 
+            background-position: center; 
+            backdrop-filter: blur(6px);
+        }
+
+        header {
+            background-color: #A0D9D9;
+            padding: 45px;
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+            font-family: 'Londrina Sketch', monospace;
+        }
+
+        header .center-text {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 40px;
+            color: #BF0B6E;    
+        }
+
+        nav {
+            background-color: #4EA69D;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
+            padding: 10px;
+            justify-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+            background-color: #BF0B6E;
+            border-radius: 5px;
+            text-align: center;
+            display: block;
+            width: 100%;
+            font-family: 'Londrina', monospace;
+        }
+
+        nav a:hover {
+            background-color: #4EA69D;
+        }
+
+        section {
+            text-align: center;
+            padding: 50px;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="Imagenes\Hatsune_miku_logo_v3.svg.png"; style="width: 300px; height: auto; float: left;">
+        <span class="center-text"><h1>Pagina Principal</h1></span>
+    </header>
+
+    <nav>
+        <a href="Figuras.html">Figuras</a>
+        <a href="ropa.html">Ropa</a>
+        <a href="juguetes.html">Juguetes</a>
+        <a href="hogar.html">Hogar</a>
+    </nav>
+
+    <section>
+        <h2>Bienvenido a nuestro sitio de compras</h2>
+        <p>si</p>
+    </section>
+
+</body>
+</html>

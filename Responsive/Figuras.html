@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figure</title>
+    <style>
+        @font-face {
+            font-family: 'Londrina Sketch';
+            src: url('Fonts\Londrina\LondrinaSketch-Regular.ttf') format('TrueType');
+        }
+
+        @font-face {
+            font-family: 'Nimbus';
+            src: url('Fonts\Nimbus\nimbussansdot-ultrligh.otf') format('opentype');
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("Imagenes/fondito.jpg");
+            background-size: cover; 
+            background-position: center; 
+            backdrop-filter: blur(2px);
+            background-color: #a0d9d9d9;
+            background-blend-mode:soft-light;
+        }
+
+        header {
+            background-color: #A0D9D9;
+            padding: 45px;
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+            font-family:'Londrina Sketch', monospace;  
+            background-image: url("Imagenes/");  
+        }
+
+        header .center-text {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 40px;
+            color: #BF0B6E;
+          
+        }
+
+        .producto {
+           display: flex;
+            align-items: center; 
+            justify-content: center;
+            margin: 30px;
+            padding: 45px;
+            background: linear-gradient(135deg, #a0d9d9b8, #d9f9f9bb); 
+            color: #BF0B6E;
+            font-family: 'Ninbus', monospace;
+            border: 5px solid #d5539a; 
+            border-radius: 10px; 
+            transition: background 0.3s ease, border-color 0.3s ease; 
+        }
+
+        .producto:hover {
+            background: linear-gradient(135deg, #d9f9f9, #a0d9d9e0); 
+            border-color: #BF0B6E; 
+        }
+
+        .producto img {
+            width: 300px; 
+            height: 300px;
+            margin-right: 25px; 
+        }
+
+        .producto h3 {
+            margin: 0;
+        }
+
+        .producto p {
+            margin: 5px 0; 
+        }
+
+        nav {
+            background-color: #4EA69D;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
+            padding: 10px;
+            justify-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+            background-color: #BF0B6E;
+            border-radius: 5px;
+            text-align: center;
+            display: block;
+            width: 100%;
+            font-family: 'Londrina Sketch', monospace;
+        }
+
+        nav a:hover {
+            background-color: #4EA69D;
+        }
+
+        section {
+            padding: 50px;
+        }
+        @media (max-width: 768px) {
+            nav {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="Imagenes\Hatsune_miku_logo_v3.svg.png"; style="width: 300px; height: auto; float: left;">
+        <span class="center-text"><h1>Figuras</h1></span>
+    </header>
+
+    <nav>
+        <a href="Pagprincipal.html">Inicio</a>
+        <a href="Figuras.html">Figuras</a>
+        <a href="ropa.html">Ropa</a>
+        <a href="juguetes.html">Juguetes</a>
+        <a href="hogar.html">Hogar</a>
+    </nav>
+
+    <section>
+        <h2 style="color: #BF0B6E; font-family: monospace;">Hatsune Miku</h2>
+
+        <div class="producto">
+            <img src="Imagenes\Figure 1a.webp" alt="Producto 1">
+            <div>
+                <h3>Piapro Characters - Hatsune Miku - Hatsune Miku x Cinnamoroll - Luminasta (SEGA)</h3> <br>
+                <p>¡Sega lo ha vuelto a lograr con esta adorable figura de Miku y Cinnamon Roll! Parte de la serie de figuras Luminasta, esta adorable mezcla de la sensación del pop Hatsune Miku y Sanrio Character Cinnamon Roll, realmente te brinda el efecto brillante por el que Luminasta es conocido.</p><br>
+                <p>Precio: $61.36</p>
+            </div>
+        </div>
+
+        <div class="producto">
+            <img src="Imagenes\figura2.webp" alt="Producto 2">
+            <div>
+                <h3>Piapro Characters - Hatsune Miku - Noodle Stopper Figure - Sakura, 2023 Ver. (FuRyu)</h3><br>
+                <p>¡FuRyu lo ha vuelto a hacer con esta encantadora figura de Miku! Parte de la línea Noodle Stopper Figures, esta versión de Hatsune Miku, en su temática Sakura 2023, combina a la perfección la belleza primaveral de los cerezos en flor con el icónico estilo de Miku. Con detalles delicados y un diseño que evoca la serenidad del Hanami, esta figura no solo detiene tus fideos, ¡sino que también roba miradas con su elegante encanto y su presencia etérea!</p><br>
+                <p>Precio: $32.38</p>
+            </div>
+        </div>
+
+        <div class="producto">
+            <img src="Imagenes\figure 3.webp" alt="Producto 3">
+            <div>
+                <h3>Piapro Characters - Hatsune Miku - SPM Figure - 15th Anniversary, Suou ver. (SEGA)</h3><br>
+                <p>De la línea Piapro Character llega esta hermosa figura de Hatsune Miku, versión Suou 15º Aniversario. Basándose en una ilustración original del artista Suou, Sega ha recreado la ilustración con un detalle sorprendente. Comenzando con la corona sobre su cabeza hasta el azul metálico de sus zapatos Mary Jane.</p><br>
+                <p>Precio: $21.79</p>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>Contacto: grupo@compras.com | Tel: +123 456 7890</p>
+    </footer>
+
+</body>
+</html>

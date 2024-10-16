@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ropa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
+            padding: 10px;
+            justify-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+            background-color: #555;
+            border-radius: 5px;
+            text-align: center;
+            display: block;
+            width: 100%;
+        }
+
+        nav a:hover {
+            background-color: #666;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .product h3 {
+            margin: 10px 0;
+        }
+
+        .product p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .product span {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Media Query para móviles */
+        @media (max-width: 768px) {
+            nav {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ropa</h1>
+    </header>
+
+    <nav>
+        <a href="Pagprincipal.html">Inicio</a>
+        <a href="electronica.html">Electrónica</a>
+        <a href="ropa.html">Ropa</a>
+        <a href="juguetes.html">Juguetes</a>
+        <a href="hogar.html">Hogar</a>
+    </nav>
+
+    <section class="container">
+        <!-- Ropa -->
+        <div class="product">
+            <h3>Camisa de algodón</h3>
+            <p>Camisa cómoda y ligera para el día a día</p>
+            <span>$29.99</span>
+        </div>
+        <div class="product">
+            <h3>Pantalones de mezclilla</h3>
+            <p>Pantalones de corte clásico</p>
+            <span>$49.99</span>
+        </div>
+        <div class="product">
+            <h3>Sudadera deportiva</h3>
+            <p>Sudadera con capucha y ajuste perfecto</p>
+            <span>$39.99</span>
+        </div>
+    </section>
+
+    <footer>
+        <p>Contacto: grupo@compras.com | Tel: +123 456 7890</p>
+    </footer>
+
+</body>
+</html>
